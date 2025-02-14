@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+
+
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application
+		android:allowBackup="true"
+		android:theme="@style/Theme.LoginNex"
+		android:label="UniNexus"
+		android:usesCleartextTraffic="true"
+		android:icon="@mipmap/pervious"
+		tools:replace="android:icon,android:label,android:theme"
+		>
+
+		<activity
+			android:name=".main_activity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="UniNexus"
+			android:exported="true"
+			android:screenOrientation="portrait"
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".login_activity"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".reg_activity"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".stu_home"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".stu_id"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".stu_link"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".req_act"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".forget_pass"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".stu_sch"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".set_act"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".cont_act"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".cred_act"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".staff_home"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".staff_id"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".prof_act"
+		android:label="UniNexus"
+		android:screenOrientation="portrait"/>
+		<activity android:name=".error_act"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".halls_act"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".it_home"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".attend_act"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".errors_it"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".user_request"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".feedback"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".stu_qa"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+		<activity android:name=".doc_qa"
+			android:label="UniNexus"
+			android:screenOrientation="portrait"/>
+
+
+		<meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
+	
+	
