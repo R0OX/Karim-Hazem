@@ -1,0 +1,196 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:id="@+id/student_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/error2">
+
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="357dp"
+                android:background="@drawable/backarrow" />
+
+            <TextView
+                android:id="@+id/OCC"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/backbutton"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="285dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center_horizontal|top"
+                android:text="Halls"
+                android:textAppearance="@style/hello"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/hal"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OCC"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="96dp"
+                android:background="@drawable/erinput"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingLeft="25dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="332dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/butgo"
+                android:text="GO"
+                app:backgroundTint="@null" />
+
+            <View
+                android:id="@+id/idcard"
+                android:layout_width="359dp"
+                android:layout_height="451dp"
+                android:layout_below="@+id/hal"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/errorde"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backbutton"
+                app:layout_constraintVertical_bias="0.269" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/errortype"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Description:"
+                android:textColor="@color/white"
+                android:textSize="27dp"
+                app:layout_constraintEnd_toEndOf="@+id/idcard"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/idcard"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="338dp" />
+
+            <TextView
+                android:id="@+id/done"
+                android:layout_width="101dp"
+                android:layout_height="62dp"
+                android:layout_alignStart="@+id/idcard"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_alignBottom="@+id/idcard"
+                android:layout_marginStart="135dp"
+                android:layout_marginEnd="123dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Fixed"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="@+id/idcard"
+                app:layout_constraintEnd_toEndOf="@+id/idcard"
+                app:layout_constraintHorizontal_bias="0.619"
+                app:layout_constraintStart_toStartOf="@+id/idcard"
+                app:layout_constraintTop_toTopOf="@+id/idcard"
+                app:layout_constraintVertical_bias="0.985" />
+
+            <TextView
+                android:id="@+id/haller"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/idcard"
+                android:layout_alignTop="@+id/idcard"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Hall"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/buliding"
+                app:layout_constraintEnd_toEndOf="@+id/idcard"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="@+id/idcard"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/buliding"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/haller"
+                android:layout_alignStart="@+id/idcard"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="127dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Building"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/idcard"
+                app:layout_constraintHorizontal_bias="0.081"
+                app:layout_constraintStart_toStartOf="@+id/idcard" />
+
+            <TextView
+                android:id="@+id/errortype"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buliding"
+                android:layout_alignStart="@+id/idcard"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Error Type:"
+                android:textColor="@color/white"
+                android:textSize="27dp"
+                app:layout_constraintEnd_toEndOf="@+id/idcard"
+                app:layout_constraintHorizontal_bias="0.116"
+                app:layout_constraintStart_toStartOf="@+id/idcard"
+                tools:layout_editor_absoluteY="284dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

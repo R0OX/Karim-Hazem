@@ -1,0 +1,127 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+            <RelativeLayout
+                android:id="@+id/student_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/idbg">
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="367dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="39dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@drawable/punchingrad"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Punch Out"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="50dp" />
+
+                <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="357dp"
+                android:background="@drawable/backarrow" />
+
+                <View
+                    android:id="@+id/idcard"
+                    android:layout_width="380dp"
+                    android:layout_height="797dp"
+                    android:layout_above="@+id/submit"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="-28dp"
+                    android:background="@drawable/idblue" />
+
+                <ImageView
+                    android:id="@+id/profilepic"
+                    android:layout_width="143dp"
+                    android:layout_height="136dp"
+                    android:layout_alignTop="@+id/idcard"
+                    android:layout_alignEnd="@+id/idcard"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="127dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/pp" />
+
+                <View
+                    android:id="@+id/button_id"
+                    android:layout_width="250dp"
+                    android:layout_height="236dp"
+                    android:layout_below="@+id/profilepic"
+                    android:layout_alignStart="@+id/idcard"
+                    android:layout_alignEnd="@+id/idcard"
+                    android:layout_alignBottom="@+id/idcard"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="121dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="81dp"
+                    android:background="@drawable/qrcard" />
+
+                <ImageView
+                    android:id="@+id/QR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buliding"
+                    android:layout_alignStart="@+id/button_id"
+                    android:layout_alignEnd="@+id/button_id"
+                    android:layout_alignBottom="@+id/button_id"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/qr" />
+
+                <TextView
+                    android:id="@+id/buliding"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profilepic"
+                    android:layout_alignStart="@+id/idcard"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="109dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Punch In"
+                    android:textAppearance="@style/welcome_home"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

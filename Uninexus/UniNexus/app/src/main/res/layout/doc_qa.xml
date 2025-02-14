@@ -1,0 +1,219 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:id="@+id/student_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/feed_out">
+
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="138dp"
+                android:layout_below="@+id/quescard"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="22dp"
+                android:layout_toEndOf="@+id/per"
+                android:background="@drawable/nextfeed"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:backgroundTint="@null" />
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="357dp"
+                android:background="@drawable/backarrow" />
+
+
+            <View
+                android:id="@+id/quescard"
+                android:layout_width="359dp"
+                android:layout_height="622dp"
+                android:layout_below="@+id/backbutton"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/feed" />
+
+            <TextView
+                android:id="@+id/stuname"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_alignStart="@+id/quescard"
+                android:layout_alignTop="@+id/quescard"
+                android:layout_alignEnd="@+id/quescard"
+                android:layout_alignBottom="@+id/quescard"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="537dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Student Name"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/stuphone"
+                android:layout_width="310dp"
+                android:layout_height="34dp"
+                android:layout_alignStart="@+id/quescard"
+                android:layout_alignTop="@+id/quescard"
+                android:layout_alignEnd="@+id/quescard"
+                android:layout_alignBottom="@+id/quescard"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="475dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Student phone number"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/stuem"
+                android:layout_width="334dp"
+                android:layout_height="44dp"
+                android:layout_alignStart="@+id/quescard"
+                android:layout_alignTop="@+id/quescard"
+                android:layout_alignEnd="@+id/quescard"
+                android:layout_alignBottom="@+id/quescard"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="423dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Student Email"
+                android:textAppearance="@style/contact"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="334dp"
+                android:layout_height="44dp"
+                android:layout_alignStart="@+id/quescard"
+                android:layout_alignTop="@+id/quescard"
+                android:layout_alignEnd="@+id/quescard"
+                android:layout_alignBottom="@+id/quescard"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="198dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="375dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Title:"
+                android:textAppearance="@style/contact"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="338dp"
+                android:layout_height="226dp"
+                android:layout_alignStart="@+id/quescard"
+                android:layout_alignTop="@+id/quescard"
+                android:layout_alignEnd="@+id/quescard"
+                android:layout_alignBottom="@+id/quescard"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="252dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="144dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Description:"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/decline"
+                android:layout_width="113dp"
+                android:layout_height="43dp"
+                android:layout_alignStart="@+id/quescard"
+                android:layout_alignTop="@+id/quescard"
+                android:layout_alignEnd="@+id/quescard"
+                android:layout_alignBottom="@+id/quescard"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="524dp"
+                android:layout_marginEnd="208dp"
+                android:layout_marginBottom="55dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Decline"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/respond"
+                android:layout_width="113dp"
+                android:layout_height="43dp"
+                android:layout_alignStart="@+id/quescard"
+                android:layout_alignTop="@+id/quescard"
+                android:layout_alignEnd="@+id/quescard"
+                android:layout_alignBottom="@+id/quescard"
+                android:layout_marginStart="206dp"
+                android:layout_marginTop="524dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="55dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Respond"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/per"
+                android:layout_width="wrap_content"
+                android:layout_height="138dp"
+                android:layout_below="@+id/quescard"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="23dp"
+                android:background="@drawable/prevfeed"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Pervious"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:backgroundTint="@null" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:id="@+id/student_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/errorbg">
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="357dp"
+                android:background="@drawable/backarrow" />
+
+
+            <TextView
+                android:id="@+id/hall_name"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/backbutton"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-71dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="180dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center_horizontal|top"
+                android:text="Hall Name"
+                android:textAppearance="@style/hello"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/halltext"
+                android:layout_width="367dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/hall_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/erinput"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/buildname"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/halltext"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-78dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="188dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center_horizontal|top"
+                android:text="Building"
+                android:textAppearance="@style/hello"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/buildtext"
+                android:layout_width="367dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/buildname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/erinput"
+                android:ems="10"
+                android:paddingLeft="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/errtype"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buildtext"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-74dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="184dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center_horizontal|top"
+                android:text="Error Type"
+                android:textAppearance="@style/hello"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/errortext"
+                android:layout_width="367dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/errtype"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/erinput"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:maxLines="1"
+                android:paddingLeft="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/desname"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/errortext"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-64dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="174dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center_horizontal|top"
+                android:text="Description"
+                android:textAppearance="@style/email_addre"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/destext"
+                android:layout_width="379dp"
+                android:layout_height="205dp"
+                android:layout_below="@+id/desname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/desinput"
+                android:inputType="textMultiLine"
+                android:paddingLeft="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/subbg"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:backgroundTint="@null"
+                app:cornerRadius="50dp"
+
+
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

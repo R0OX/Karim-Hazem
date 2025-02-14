@@ -1,0 +1,265 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".login_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/page_student_ek1"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/student_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/mainbg">
+
+
+                <ImageView
+                    android:id="@+id/backbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="357dp"
+                    android:background="@drawable/backarrow" />
+
+                <View
+                    android:id="@+id/setcard"
+                    android:layout_width="396dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="67dp"
+                    android:background="@drawable/black" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/setcard"
+                    android:layout_alignTop="@+id/setcard"
+                    android:layout_alignBottom="@+id/setcard"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:srcCompat="@drawable/settings" />
+
+                <TextView
+                    android:id="@+id/settings"
+                    android:layout_width="236dp"
+                    android:layout_height="45dp"
+                    android:layout_alignTop="@+id/setcard"
+                    android:layout_alignEnd="@+id/setcard"
+                    android:layout_alignBottom="@+id/setcard"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="23dp"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="top"
+                    android:text="Settings"
+                    android:textAppearance="@style/welcome_home" />
+
+                <View
+                    android:id="@+id/modecard"
+                    android:layout_width="389dp"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/setcard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="11dp"
+                    android:background="@drawable/black" />
+
+                <TextView
+                    android:id="@+id/dark"
+                    android:layout_width="185dp"
+                    android:layout_height="42dp"
+                    android:layout_alignStart="@+id/modecard"
+                    android:layout_alignTop="@+id/modecard"
+                    android:layout_alignBottom="@+id/modecard"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toStartOf="@+id/switch2"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="top"
+                    android:text="Dark Mode"
+                    android:textAppearance="@style/welcome_home" />
+
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="124dp"
+                    android:layout_height="38dp"
+                    android:layout_alignTop="@+id/modecard"
+                    android:layout_alignEnd="@+id/modecard"
+                    android:layout_alignBottom="@+id/modecard"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="28dp" />
+
+                <View
+                    android:id="@+id/procard"
+                    android:layout_width="389dp"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/modecard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="11dp"
+                    android:background="@drawable/black"
+                    android:onClick="probut" />
+
+                <TextView
+                    android:id="@+id/pro"
+                    android:layout_width="185dp"
+                    android:layout_height="42dp"
+                    android:layout_alignStart="@+id/procard"
+                    android:layout_alignTop="@+id/procard"
+                    android:layout_alignEnd="@+id/procard"
+                    android:layout_alignBottom="@+id/procard"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="185dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="top"
+                    android:text="profile"
+                    android:textAppearance="@style/welcome_home" />
+
+                <View
+                    android:id="@+id/contcard"
+                    android:layout_width="389dp"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/procard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="11dp"
+                    android:background="@drawable/black"
+                    android:onClick="contbut" />
+
+                <TextView
+                    android:id="@+id/cont"
+                    android:layout_width="185dp"
+                    android:layout_height="42dp"
+                    android:layout_alignStart="@+id/contcard"
+                    android:layout_alignTop="@+id/contcard"
+                    android:layout_alignEnd="@+id/contcard"
+                    android:layout_alignBottom="@+id/contcard"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="184dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="top"
+                    android:text="contacts"
+                    android:textAppearance="@style/welcome_home" />
+
+                <View
+                    android:id="@+id/credcard"
+                    android:layout_width="389dp"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/contcard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="11dp"
+                    android:background="@drawable/black"
+                    android:onClick="credtbut" />
+
+                <TextView
+                    android:id="@+id/cred"
+                    android:layout_width="185dp"
+                    android:layout_height="42dp"
+                    android:layout_alignStart="@+id/credcard"
+                    android:layout_alignTop="@+id/credcard"
+                    android:layout_alignEnd="@+id/credcard"
+                    android:layout_alignBottom="@+id/credcard"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="185dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="top"
+                    android:text="credits"
+                    android:textAppearance="@style/welcome_home" />
+
+                <View
+                    android:id="@+id/fedcard"
+                    android:layout_width="389dp"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/credcard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="11dp"
+                    android:background="@drawable/black"
+                    android:onClick="fedbut" />
+
+                <TextView
+                    android:id="@+id/fed"
+                    android:layout_width="185dp"
+                    android:layout_height="42dp"
+                    android:layout_alignStart="@+id/fedcard"
+                    android:layout_alignTop="@+id/fedcard"
+                    android:layout_alignEnd="@+id/fedcard"
+                    android:layout_alignBottom="@+id/fedcard"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="185dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="top"
+                    android:text="feedback"
+                    android:textAppearance="@style/welcome_home" />
+
+                <View
+                    android:id="@+id/logoutcard"
+                    android:layout_width="389dp"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/fedcard"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="42dp"
+                    android:background="@drawable/black"
+                    android:onClick="logoutbut" />
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="185dp"
+                    android:layout_height="42dp"
+                    android:layout_alignStart="@+id/logoutcard"
+                    android:layout_alignTop="@+id/logoutcard"
+                    android:layout_alignEnd="@+id/logoutcard"
+                    android:layout_alignBottom="@+id/logoutcard"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="185dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="top"
+                    android:text="Logout"
+                    android:textAppearance="@style/welcome_home" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
