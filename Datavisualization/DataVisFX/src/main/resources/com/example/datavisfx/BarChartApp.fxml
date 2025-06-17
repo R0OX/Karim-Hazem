@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="508.0" prefWidth="990.0" style="-fx-background-color: #D2E9E9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.datavisfx.BarChartAppController">
+    <children>
+        <TextField fx:id="itemField" layoutX="83.0" layoutY="32.0" prefHeight="27.0" prefWidth="150.0" promptText="Enter Item Name" />
+        <Label layoutX="25.0" layoutY="80.0" text="Amount:">
+            <font>
+                <Font name="Sen Regular" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="amountField" layoutX="82.0" layoutY="76.0" prefHeight="27.0" prefWidth="150.0" promptText="Enter Amount" />
+        <Label layoutX="244.0" layoutY="37.0" text="Chart Name:">
+            <font>
+                <Font name="Sen Regular" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="chartNameField" layoutX="325.0" layoutY="33.0" prefHeight="27.0" prefWidth="149.0" promptText="Enter Chart Name" />
+        <Button fx:id="addButton" layoutX="249.0" layoutY="77.0" onAction="#addDataEntry" prefHeight="27.0" prefWidth="49.0" text="Add">
+            <font>
+                <Font name="Sen Regular" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="createChartButton" layoutX="376.0" layoutY="78.0" onAction="#createBarChart" prefHeight="26.0" prefWidth="100.0" text="Create Chart">
+            <font>
+                <Font name="Sen Regular" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="deleteButton" layoutX="304.0" layoutY="78.0" onAction="#deleteLastEntry" prefHeight="27.0" prefWidth="65.0" text="Delete">
+            <font>
+                <Font name="Sen Regular" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="resetButton" layoutX="81.0" layoutY="536.0" onAction="#resetData" text="Reset" />
+        <Button fx:id="downloadButton" layoutX="142.0" layoutY="536.0" onAction="#downloadChart" text="Download Chart" />
+
+        <TableView fx:id="tableView" layoutX="23.0" layoutY="120.0" prefHeight="400.0" prefWidth="453.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="225.20001220703125" text="Item" />
+                <TableColumn fx:id="valueColumn" prefWidth="227.5999755859375" text="Amount" />
+            </columns>
+        </TableView>
+
+        <BarChart fx:id="barChart" layoutX="477.0" layoutY="33.0" prefHeight="487.0" prefWidth="513.0">
+            <xAxis>
+                <CategoryAxis label="Items" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Amount" />
+            </yAxis>
+        </BarChart>
+      <Label layoutX="25.0" layoutY="38.0" text="Item:">
+         <font>
+            <Font name="Sen Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="23.0" layoutY="536.0" onAction="#goBack" text="Back" />
+    </children>
+</AnchorPane>

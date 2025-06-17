@@ -1,0 +1,103 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".login_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/page_student_ek1"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/student_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/mainbg">
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="357dp"
+                android:background="@drawable/backarrow" />
+
+            <View
+                android:id="@+id/idcard"
+                android:layout_width="385dp"
+                android:layout_height="763dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/idblue" />
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="153dp"
+                android:layout_height="166dp"
+                android:layout_alignTop="@+id/idcard"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="133dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/contact" />
+
+
+            <TextView
+                android:id="@+id/you_can_con"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilepic"
+                android:layout_alignStart="@+id/idcard"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center_horizontal|top"
+                android:text="You can contact \nus from"
+                android:textAppearance="@style/welcome_home" />
+
+            <TextView
+                android:id="@+id/the_univers"
+                android:layout_width="320dp"
+                android:layout_height="299dp"
+                android:layout_below="@+id/you_can_con"
+                android:layout_alignStart="@+id/idcard"
+                android:layout_alignEnd="@+id/idcard"
+                android:layout_alignBottom="@+id/idcard"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="145dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center_horizontal|top"
+                android:text="the university it\n department\n\n
+the university facebook \n page \n\n
+contact info"
+                android:textAppearance="@style/contact" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="508.0" prefWidth="990.0" style="-fx-background-color: #C4DFDF;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.datavisfx.HomeController">
+    <children>
+        <Label alignment="CENTER" layoutX="412.0" layoutY="221.0" prefHeight="60.0" prefWidth="149.0" text="DataVis" textAlignment="CENTER">
+            <font>
+                <Font name="Sen Regular" size="37.0" />
+            </font>
+        </Label>
+        <Label layoutX="422.0" layoutY="279.0" text="Data Visualization Tool" />
+        <Button fx:id="piechart" layoutX="165.0" layoutY="343.0" mnemonicParsing="false" onAction="#goToPieChart" prefHeight="74.0" prefWidth="142.0" text="Pie Chart">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Button fx:id="Vbarchart" layoutX="414.0" layoutY="343.0" mnemonicParsing="false" onAction="#goToVerticalBarChart" prefHeight="74.0" prefWidth="150.0" text="Vertical Bar Chart">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Button fx:id="Linechart" layoutX="672.0" layoutY="343.0" mnemonicParsing="false" onAction="#goToLineChart" prefHeight="74.0" prefWidth="150.0" text="Horizontal Line Chart">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="168.0" fitWidth="175.0" layoutX="404.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Logo.png" />
+            </image>
+        </ImageView>
+      
+    </children>
+</AnchorPane>

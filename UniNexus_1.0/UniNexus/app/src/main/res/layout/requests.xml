@@ -1,0 +1,198 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:id="@+id/student_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/reqbg">
+
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="165dp"
+                android:layout_height="138dp"
+                android:layout_below="@+id/stuinf"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="34dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/nextbut"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:backgroundTint="@null" />
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="357dp"
+                android:background="@drawable/backarrow" />
+
+
+            <View
+                android:id="@+id/stuinf"
+                android:layout_width="359dp"
+                android:layout_height="622dp"
+                android:layout_below="@+id/backbutton"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/reqin" />
+
+            <TextView
+                android:id="@+id/stuname"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_alignStart="@+id/stuinf"
+                android:layout_alignTop="@+id/stuinf"
+                android:layout_alignEnd="@+id/stuinf"
+                android:layout_alignBottom="@+id/stuinf"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="211dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="357dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Student Name"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/studid"
+                android:layout_width="310dp"
+                android:layout_height="34dp"
+                android:layout_alignStart="@+id/stuinf"
+                android:layout_alignTop="@+id/stuinf"
+                android:layout_alignEnd="@+id/stuinf"
+                android:layout_alignBottom="@+id/stuinf"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="279dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="286dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Student ID"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/stuem"
+                android:layout_width="334dp"
+                android:layout_height="44dp"
+                android:layout_alignStart="@+id/stuinf"
+                android:layout_alignTop="@+id/stuinf"
+                android:layout_alignEnd="@+id/stuinf"
+                android:layout_alignBottom="@+id/stuinf"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="334dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="239dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Student Email"
+                android:textAppearance="@style/contact"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/stuocc"
+                android:layout_width="315dp"
+                android:layout_height="32dp"
+                android:layout_alignStart="@+id/stuinf"
+                android:layout_alignTop="@+id/stuinf"
+                android:layout_alignEnd="@+id/stuinf"
+                android:layout_alignBottom="@+id/stuinf"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="397dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="175dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Student Occ"
+                android:textAppearance="@style/contact"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/button"
+                android:layout_width="74dp"
+                android:layout_height="77dp"
+                android:layout_alignStart="@+id/stuinf"
+                android:layout_alignEnd="@+id/stuinf"
+                android:layout_alignBottom="@+id/stuinf"
+                android:layout_marginStart="51dp"
+                android:layout_marginEnd="234dp"
+                android:layout_marginBottom="37dp"
+                android:background="@drawable/right" />
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="67dp"
+                android:layout_height="81dp"
+                android:layout_alignStart="@+id/stuinf"
+                android:layout_alignEnd="@+id/stuinf"
+                android:layout_alignBottom="@+id/stuinf"
+                android:layout_marginStart="227dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="37dp"
+                android:background="@drawable/wrong" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="205dp"
+                android:layout_height="119dp"
+                android:layout_alignStart="@+id/stuinf"
+                android:layout_alignTop="@+id/stuinf"
+                android:layout_alignEnd="@+id/stuinf"
+                android:layout_marginStart="87dp"
+                android:layout_marginTop="62dp"
+                android:layout_marginEnd="76dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/pp" />
+
+            <Button
+                android:id="@+id/per"
+                android:layout_width="wrap_content"
+                android:layout_height="138dp"
+                android:layout_below="@+id/stuinf"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/perbut"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Pervious"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:backgroundTint="@null" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

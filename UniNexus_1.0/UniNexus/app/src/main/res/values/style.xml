@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="hello">
+        <item name="android:textSize">25.3dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="welcome">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="do_not_forg">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="login">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="email_addre">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="forgot_your">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="click_here">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#BD0019FF</item>
+    </style>
+    <style name="password_re">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="welcome_home">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="contact">
+        <item name="android:textSize">23dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="bar">
+        <item name="android:textSize">23dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
